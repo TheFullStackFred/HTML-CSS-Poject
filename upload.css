@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+@font-face {
+  font-family: Cormorant;
+  src: url(./Cormorant_Garamond/CormorantGaramond-Medium.ttf) format("truetype");
+  src: url(./Cormorant_Garamond/CormorantGaramond-Bold.ttf) format("truetype");
+}
+body {
+  background-image: radial-gradient(
+      circle,
+      rgba(207, 224, 191, 0.637) 0%,
+      rgba(225, 228, 214, 0.438) 85%
+    ),
+    url(./images/cow.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: Cormorant;
+}
+header {
+  grid-area: header;
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 20px;
+}
+main {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 5% 45% 45% 5%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    ". video1 video2 ."
+    ". video3 video4 .";
+}
+a {
+  text-transform: uppercase;
+  margin: auto;
+  letter-spacing: 0.4rem;
+  font-size: 4.5rem;
+  font-family: "Architects Daughter";
+}
+h1 {
+  margin: auto;
+  margin-top: 1.5rem;
+  color: rgb(20, 19, 20);
+  border-radius: 10px;
+  width: max-content;
+  color: rgb(33, 51, 36);
+}
+
+/*--------------------- GRID AREA ----------------------*/
+h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 1rem;
+}
+.video1 {
+  grid-area: video1;
+}
+.video2 {
+  grid-area: video2;
+}
+.video3 {
+  grid-area: video3;
+}
+.video4 {
+  grid-area: video4;
+}
+video {
+  max-width: 100%;
+  max-height: 100%;
+}
+/*--------------------- VIDEO SEKTION ----------------------*/
+
+.video {
+  margin: 10px;
+  background-color:rgba(66, 68, 66, 0.548);
+  padding: 10px;
+  border: 2px solid black;
+}
+label {
+  height: 100%;
+  font-size: 2vw;
+}
+fieldset {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+  color: white;
+}
+.button {
+  display: block;
+  min-width: 100%;
+}
+input[type="radio"] {
+  height: 2.8vh;
+  width: 2.8vw;
+  font-size: 12vh;
+}
+input[type="submit"] {
+  background-color: rgba(211, 55, 190, 0.795);
+  box-shadow: 1px 1px black;
+  display: block;
+  margin: auto;
+  font-size: 3vh;
+  margin-top: 1vh;
+  color: rgb(250, 248, 248);
+}
+
+/*------------------ FOOTER ---------------------------*/
+footer {
+  grid-area: footer;
+  margin: auto;
+  text-align: center;
+  background-color: rgba(211, 55, 190, 0.795);
+  width: 30%;
+  border: 2px solid rgb(204, 202, 202);
+  border-radius: 30px;
+  box-shadow: 1px 1px black;
+  margin-bottom: 30px;
+}
+img {
+  border-radius: 20px;
+}
+#copywrite {
+  margin-bottom: 10px;
+}
+h3 {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  padding: 10px;
+  text-transform: uppercase;
+}
+@media (min-width: 300px) and (max-width: 700px) {
+  main {
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  label {
+    font-size: 1rem;
+  }
+  input[type="radio"] {
+    height: 1rem;
+    font-size: 1rem;
+    width: 1.3rem;
+  }
+  video {
+    margin-top: 30px;
+  }
+  footer {
+    width: 90%;
+  }
+}

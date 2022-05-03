@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Cormorant;
+  src: url(./Cormorant_Garamond/CormorantGaramond-Medium.ttf) format("truetype");
+}
+body {
+  height: 100vh;
+  background-color: rgba(26, 110, 26, 0.623);
+  background-image: radial-gradient(
+      circle,
+      rgba(207, 224, 191, 0.6068628134847689) 0%,
+      rgba(225, 228, 214, 0.18389362580969892) 85%
+    ),
+    url(./images/cow.jpg);
+  background-position: center, center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Cormorant;
+}
+html {
+  scroll-behavior: smooth;
+}
+main {
+  display: grid;
+  grid-template-columns: 20% 30% 30% 20%;
+  grid-template-rows: 1fr 40vh 100vh 100vh 70vh;
+  grid-template-areas:
+    ". intro-section intro-section ."
+    "nav nav nav nav"
+    ". upload upload ."
+    ". contact contact ."
+    ". about about .";
+  row-gap: 3rem;
+}
+.intro-section {
+  grid-area: intro-section;
+  background-color: rgba(255, 255, 255, 0.445);
+  border-radius: 10px;
+}
+header {
+  grid-area: header;
+  text-align: center;
+}
+h1 {
+  margin-top: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  font-size: 4.5rem;
+  font-family: "Architects Daughter";
+}
+.intro-section > h2 {
+  background-color: rgba(255, 235, 205, 0);
+  border: none;
+  color: rgb(19, 18, 17);
+}
+.intro {
+  font-family: Cormorant;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  padding: 0.5rem;
+  color: rgb(19, 18, 17);
+}
+#intro {
+  margin: 1rem 0 2rem 0;
+}
+/*---------------------- NAVIGATION --------------------------*/
+nav {
+  grid-area: nav;
+  padding: 0.3rem;
+  align-self: center;
+}
+#nav-list {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Architects Daughter";
+  list-style-type: none;
+}
+.nav-item {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2rem;
+  background-color: rgba(243, 241, 238, 0.363);
+  padding: 0.2rem;
+  border-radius: 20px;
+}
+.to-top {
+  margin-top: 4rem;
+  display: flex;
+  align-content: center;
+}
+.back-to-top {
+  margin: auto;
+  font-size: 2rem;
+}
+.nav-item:hover,
+.back-to-top:hover {
+  background-color: rgb(255, 192, 234);
+}
+.nav-item:visited {
+  color: rgb(255, 255, 255);
+}
+/*------------------------ FORMULÄR -------------------------*/
+.upload-section {
+  grid-area: upload;
+}
+h2 {
+  color: antiquewhite;
+  margin-top: 30vh;
+  border: 2px solid black;
+  border-bottom: 0;
+  font-family: Cormorant;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgba(59, 63, 55, 0.607);
+}
+.upload-form {
+  border: 2px solid black;
+  border-top: 0;
+  color: rgb(252, 252, 252);
+  background-color: rgba(59, 63, 55, 0.607);
+  font-size: 1.3rem;
+  padding: 3rem;
+}
+div {
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+  padding: 4px;
+}
+input {
+  width: 60%;
+  border-radius: 20px;
+  box-shadow: 2px 2px;
+  padding: 5px;
+}
+
+#upload-button {
+  margin-top: 1rem;
+  height: 2rem;
+  box-shadow: black 1px 1px;
+  font-size: 1.2rem;
+}
+a {
+  text-decoration: none;
+}
+.about {
+  grid-area: about;
+  padding: 3rem;
+  color: whitesmoke;
+  background-color: rgba(59, 63, 55, 0.607);
+  border: 2px solid black;
+}
+.about > h2 {
+  margin-top: 2rem;
+  border: none;
+  background-color: rgba(255, 235, 205, 0);
+}
+.about > p {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+}
+.contact {
+  grid-area: contact;
+}
+#contact-message {
+  width: 60%;
+  border-radius: 10px;
+}
+
+/*----------------------- FOOTER --------------------------------*/
+footer {
+    width: 60%;
+    grid-area: footer;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(211, 55, 190, 0.795);
+    border: 2px solid rgb(204, 202, 202);
+    border-radius: 30px;
+    box-shadow: 1px 1px black;
+    margin-bottom: 30px;
+}
+img {
+  border-radius: 20px;
+}
+h3 {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  padding: 10px;
+  text-transform: uppercase;
+}
+#copywrite {
+  margin-bottom: 4rem;
+}
+
+/*------------------------ MEDIA SCREEN --------------------------*/
+/*Små mobil skärmar såsom Iphone och Samsung*/
+@media (min-width: 300px) and (max-width: 700px) {
+  #nav-list {
+    flex-direction: column;
+    align-items: center;
+    padding: 3px;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 5% 45% 45% 5%;
+    grid-template-rows: 62vh 30vh 100vh 100vh 100vh;
+    grid-template-areas:
+      ". intro-section intro-section ."
+      ". nav nav ."
+      ". upload upload ."
+      ". contact contact ."
+      "about about about about";
+      row-gap: 0;
+  }
+  .nav-item {
+    font-size: 1.3rem;
+    margin-top: 5px;
+  }
+  h1 {
+    margin-top: 0;
+    font-size: 3rem;
+  }
+  h2 {
+    margin-top: 20vh;
+    font-size: 1.2rem;
+  }
+  .intro {
+    font-size: 1rem;
+  }
+  .back-to-top {
+    font-size: 1.3rem;
+  }
+  #intro {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  .upload-form {
+    border: 2px solid black;
+    border-top: none;
+    background-color: rgba(51, 53, 51, 0.664);
+    color: rgb(252, 252, 252);
+    padding: 0;
+  }
+  input {
+    max-height: 1.3rem;
+  }
+  #upload-button {
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+  }
+}

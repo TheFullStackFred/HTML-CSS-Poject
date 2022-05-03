@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="index.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Architects+Daughter&effect=neon" rel="stylesheet">
+  <title>Mooing.se | Sveriges första mooing community</title>
+  <meta name="description" content="Äntligen en sida där du kan träffa andra Mooare
+  och dela med dig av dina filmklipp samt rösta på det bästa bidraget">
+  <link rel="shortcut icon" type="image/jpg" href="./images/cow..jpeg">
+</head>
+
+<body>
+  <header>
+    <h1 class="font-effect-neon" id="top-of-page">Mooing</h1>
+  </header>
+  <main>
+    <nav class="font-effect-neon">
+      <ul id="nav-list">
+        <li><a class="nav-item" href="#upload1">Ladda upp ditt bidrag</a></li>
+        <li><a class="nav-item" href="#about1">Om oss</a></li>
+        <li><a class="nav-item" href="#contact1">Kontakta oss</a></li>
+        <li><a class="nav-item" href="upload.html">Inskickade bidrag</a></li>
+      </ul>
+    </nav>
+    <section class="intro-section">
+      <h2 id="intro">Introduktion</h2>
+      <p class="intro">Mooing startade i Wisconsin i norra USA i början
+        på 90-talet och har sedan dess växt explosionsartat i popularitet!</p>
+      <p class="intro">Det går ut på att på mest realistiska sätt
+        efterlikna våra fyrbenta själsfränder; korna!
+        Det kan vara både via klädsel eller annan utstyrsel, men framför allt via ljud.</p>
+      <p class="intro">Mooing har sakta men säker spridit sig över vår
+        blåa planet och det är nu på hög tid att Sverige får sitt första
+        Mooing Comunity!</p>
+      <p class="intro">
+        Här får du träffa likasinnade, få utlopp för din kreativitet, öva
+        och skapa nya kontakter samt ladda upp videor på dina kreationer och vinna
+        den åtråvärda första platsen på vår topp-lista!
+      </p>
+    </section>
+
+    <section id="upload1" class="upload-section">
+      <h2>Fyll i fältet nedan för att ladda upp ditt bidrag</h2>
+      <form class="upload-form" action="./upload.html" method="GET">
+        <div>
+          <label class="firstname" for="firstname">Förnamn:</label>
+          <input type="text" id="firstname" name="firstname" placeholder="Förnamn">
+        </div>
+        <div>
+          <label for="lastname">Efternamn:</label>
+          <input type="text" id="lastname" name="lastname" placeholder="Efternamn">
+        </div>
+        <div>
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="mail" placeholder="example@example.com">
+        </div>
+        <div>
+          <label for="tlf">Telefonnummer:</label>
+          <input type="tel" id="tlf" name="tlf" placeholder="Telefonnummer">
+        </div>
+        <div>
+          <label for="myFile">Ladda upp din video:</label>
+          <input type="file" id="myFile" name="myFile">
+        </div>
+        <div>
+          <button id="upload-button">Skicka in
+          </button>
+        </div>
+      </form>
+      <nav class="to-top">
+        <a class="back-to-top font-effect-neon" href="#top-of-page">Tillbaka till början</a>
+      </nav>
+    </section>
+    <section id="contact1" class="contact">
+      <h2>Kontaktformulär</h2>
+      <form class="upload-form" method="POST">
+        <div>
+          <label for="contact-name">Namn:</label>
+          <input type="text" id="contact-name" name="contact-name" placeholder="Namn">
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="example@example.com">
+        </div>
+        <div>
+          <label for="tlf2">Telefonnummer:</label>
+          <input type="tel" id="tlf2" name="tlf2" placeholder="Telefonnummer">
+        </div>
+        <div>
+          <label for="arende">Vad gäller ditt ärende?:</label>
+          <input type="text" id="arende" name="arende" placeholder="Ärende">
+        </div>
+        <div>
+          <label for="contact-message">Hur kan vi hjälpa till?:</label>
+          <textarea id="contact-message" name="contact-message" placeholder="Skriv ditt meddelande här" rows="4"
+            cols="5"></textarea>
+        </div>
+      </form>
+      <nav class="to-top">
+        <a class="back-to-top font-effect-neon" href="#top-of-page">Tillbaka till början</a>
+      </nav>
+    </section>
+    <section id="about1" class="about">
+      <h2>Om oss</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus sit animi officia nulla commodi
+        suscipit ipsum at. Magni voluptatem maiores velit. Ab ipsa deserunt quaerat provident, sint repellendus iure
+        odit.</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, eligendi nam repellat dignissimos vel dolorum
+        ducimus soluta voluptatem ab excepturi exercitationem voluptatum ratione illo modi autem. Libero amet ad
+        laboriosam?</p>
+    </section>
+  </main>
+  <footer>
+    <h3>Följ oss på Sociala medier</h3>
+    <img src="./images/instalogo.jpeg" alt="Logotype för Instagram" width="40">
+    <img src="./images/facebook.png" alt="Logotype för Facebook" width="40">
+    <p id="copywrite">&#169; Erika Alexandersson & Fredrik Strömberg</p>
+  </footer>
+</body>
+
+</html>

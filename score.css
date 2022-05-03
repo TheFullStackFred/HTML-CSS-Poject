@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Cormorant;
+  src: url(./Cormorant_Garamond/CormorantGaramond-Medium.ttf) format("truetype");
+}
+body {
+  height: 100%;
+  background-image: radial-gradient(
+      circle,
+      rgba(207, 224, 191, 0.637) 0%,
+      rgba(225, 228, 214, 0.438) 85%
+    ),
+    url(./images/cow.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Cormorant;
+}
+main {
+  max-width: 800px;
+  margin: auto;
+}
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+picture {
+  max-width: 100%;
+}
+a{
+text-transform: uppercase;
+margin: auto;
+letter-spacing: 0.4rem;
+font-size: 4.5rem;
+font-family: "Architects Daughter";
+}
+img {
+  width: 100%;
+  margin: auto;
+}
+section {
+  margin-bottom: 4rem;
+  padding: 2px;
+  border: 2px solid black;
+}
+h1 {
+  margin-top: 3rem;
+  text-transform: uppercase;
+}
+h2, p{
+  font-size: 2.5rem;
+  text-align: center;
+  margin: auto;
+  color: whitesmoke;
+
+}
+h2 {
+  background-color: rgba(51, 53, 51, 0.664);
+  padding-bottom: 10px;
+  text-decoration: underline;
+}
+div {
+  background-color: rgba(51, 53, 51, 0.664);
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-around;
+}
+p {
+  padding: 3px;
+  font-size: 2rem;
+  width: 100%;
+}
+table {
+  font-size: 1.4rem;
+  width: 80%;
+  color: whitesmoke;
+}
+footer {
+  grid-area: footer;
+  margin: auto;
+  text-align: center;
+  background-color: rgba(211, 55, 190, 0.795);
+  width: 30%;
+  border: 2px solid rgb(204, 202, 202);
+  border-radius: 30px;
+  box-shadow: 1px 1px black;
+  margin-bottom: 30px;
+}
+footer > img {
+  border-radius: 20px;
+  width: 30px;
+}
+#copywrite {
+  margin-bottom: 10px;
+}
+h3 {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  padding: 10px;
+  text-transform: uppercase;
+}
+footer > p {
+font-size: 1rem;
+}
+@media (min-width: 300px) and (max-width: 499px) {
+  main{
+    width: 90%;
+  }
+  h2{
+    font-size: 2rem;
+  }
+  p, table {
+    font-size: 1rem;
+  }
+  footer {
+    width: 100%;
+  }
+}
